@@ -33,10 +33,13 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build site
-        run: bundle exec jekyll build --baseurl "${BASE_PATH}"
+        # NOTE: do NOT pass --baseurl. The CNAME custom domain means the
+        # site is served at the apex (https://teachfi.education/), so the
+        # empty `baseurl: ""` from _config.yml is correct. configure-pages
+        # would otherwise inject `/teachfi` which breaks all asset paths.
+        run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-          BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
