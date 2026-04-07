@@ -87,7 +87,7 @@ layout: default
     <h2>{% if is_en %}Want this module at your school?{% else %}Vrei acest modul în școala ta?{% endif %}</h2>
     <p>{% if is_en %}Free account, 5-minute setup, no card required.{% else %}Cont gratuit, configurare în 5 minute, fără card.{% endif %}</p>
     <div class="hero-cta center">
-      <a class="btn btn-primary btn-lg" href="https://app.teachfi.education" target="_blank" rel="noopener">{% if is_en %}Create school account{% else %}Creează cont școală{% endif %}</a>
+      <a class="btn btn-primary btn-lg" href="{% if is_en %}/en/school/{% else %}/scoala/{% endif %}">{% if is_en %}Create school account{% else %}Creează cont școală{% endif %}</a>
       <a class="btn btn-ghost btn-lg" href="mailto:contact@teachfi.education">{% if is_en %}Talk to the team{% else %}Vorbește cu echipa{% endif %}</a>
     </div>
   </div>
