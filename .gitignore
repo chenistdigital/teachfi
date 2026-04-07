@@ -1,0 +1,36 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler / Ruby dependencies
+vendor/
+.bundle/
+
+# macOS / editor noise
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node (in case JS tooling gets added later)
+node_modules/
+
+# Local environment / secrets
+.env
+.env.local
+
+# Generated / temporary
+/tmp/
+*.tmp
+
+# Keep brand source files out of the public site if you ever drop them here
+# (uncomment if you copy the big PDFs into the repo)
+# about/

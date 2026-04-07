@@ -1,0 +1,82 @@
+---
+layout: default
+permalink: /en/investor/
+lang: en
+title: "I want to back the TeachFi project"
+description: "Apply to become a TeachFi backer or investor. We work with angels, foundations, NGOs and corporate sponsors."
+---
+
+<section class="hero">
+  <div class="wrap" style="max-width:880px;">
+    <div class="eyebrow">
+      <a href="/en/" style="color:var(--brand);">← Back to home</a>
+    </div>
+    <h1 class="hero-title" style="margin-top:24px;">
+      I want to <span class="grad">back the project.</span>
+    </h1>
+    <p class="hero-sub">
+      TeachFi is built with the support of people who believe that applied financial education can shift a generation. We work with angel investors, foundations, corporate sponsors and individual donors.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap" style="max-width:720px;">
+    <span class="kicker">Application</span>
+    <h2 class="section-title">Let's talk</h2>
+    <p class="lead">Fill in the form and we'll get back to you with a meeting within a few business days.</p>
+
+    <form class="lead-form" action="https://formspree.io/f/{{ site.formspree.investor }}" method="POST" style="margin-top:32px;">
+      <div>
+        <label for="inv-last">Last name *</label>
+        <input id="inv-last" type="text" name="last_name" required>
+      </div>
+      <div>
+        <label for="inv-first">First name *</label>
+        <input id="inv-first" type="text" name="first_name" required>
+      </div>
+      <div>
+        <label for="inv-email">Email *</label>
+        <input id="inv-email" type="email" name="email" required>
+      </div>
+      <div>
+        <label for="inv-phone">Phone</label>
+        <input id="inv-phone" type="tel" name="phone" placeholder="+40...">
+      </div>
+      <div class="full">
+        <label for="inv-msg">How can you back this project? *</label>
+        <textarea id="inv-msg" name="message" required placeholder="Investment, mentorship, connections, distribution, event sponsorship — tell us briefly how we could help each other..."></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="TeachFi · Investor application">
+      <input type="hidden" name="form_type" value="investor_en">
+      <div class="full">
+        <button class="btn btn-primary btn-lg" type="submit">Send application</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap" style="max-width:720px;">
+    <span class="kicker">Forms of support</span>
+    <h2 class="section-title">How you can help</h2>
+    <ul class="bullet">
+      <li><strong>Investment</strong> — capital to scale the platform and the team.</li>
+      <li><strong>Sponsorship</strong> — funding for a pilot school or a student cohort.</li>
+      <li><strong>Mentorship</strong> — expertise in EdTech, blockchain, fundraising, GTM.</li>
+      <li><strong>Connections</strong> — intros to schools, public-sector decision makers, tech partners.</li>
+      <li><strong>Donations</strong> — scholarships for deserving students, funding for entrepreneurship contests.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap cta-wrap">
+    <h2>Prefer to reach out directly?</h2>
+    <p>The team replies quickly on email and phone.</p>
+    <div class="hero-cta center">
+      <a class="btn btn-primary btn-lg" href="mailto:contact@teachfi.education">contact@teachfi.education</a>
+      <a class="btn btn-ghost btn-lg" href="tel:+40721703878">+40 721 70 38 78</a>
+    </div>
+  </div>
+</section>

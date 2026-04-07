@@ -1,0 +1,98 @@
+---
+layout: default
+permalink: /scoala/
+lang: ro
+title: "Vreau TeachFi în școala mea"
+description: "Aplică pentru a aduce TeachFi în școala ta. Cont gratuit, configurare în 5 minute, fără card."
+---
+
+<section class="hero">
+  <div class="wrap" style="max-width:880px;">
+    <div class="eyebrow">
+      <a href="/" style="color:var(--brand);">← Înapoi la pagina principală</a>
+    </div>
+    <h1 class="hero-title" style="margin-top:24px;">
+      Vreau TeachFi în <span class="grad">școala mea.</span>
+    </h1>
+    <p class="hero-sub">
+      Pornește pilotul TeachFi în instituția ta — gratuit pe toată durata programului. Setup tehnic în 5 minute, onboarding cu echipa noastră, curriculum complet pe 5 ani.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap" style="max-width:720px;">
+    <span class="kicker">Aplicație școală</span>
+    <h2 class="section-title">Spune-ne despre școala ta</h2>
+    <p class="lead">Completează formularul și revenim în maxim 3 zile lucrătoare cu o întâlnire de prezentare.</p>
+
+    <form class="lead-form" action="https://formspree.io/f/{{ site.formspree.school }}" method="POST" style="margin-top:32px;">
+      <div class="full">
+        <label for="sc-institutie">Numele instituției *</label>
+        <input id="sc-institutie" type="text" name="institutie" required>
+      </div>
+      <div>
+        <label for="sc-email">Email *</label>
+        <input id="sc-email" type="email" name="email" required>
+      </div>
+      <div>
+        <label for="sc-telefon">Telefon *</label>
+        <input id="sc-telefon" type="tel" name="telefon" required placeholder="+40...">
+      </div>
+      <div class="full">
+        <label for="sc-adresa">Adresă *</label>
+        <input id="sc-adresa" type="text" name="adresa" required placeholder="Strada, oraș, județ">
+      </div>
+      <div>
+        <label for="sc-persoana">Persoana de contact *</label>
+        <input id="sc-persoana" type="text" name="persoana_contact" required>
+      </div>
+      <div>
+        <label for="sc-utilizatori">Număr estimativ de utilizatori *</label>
+        <select id="sc-utilizatori" name="utilizatori" required>
+          <option value="">Alege un interval</option>
+          <option>Sub 100</option>
+          <option>100 – 250</option>
+          <option>250 – 500</option>
+          <option>500 – 1000</option>
+          <option>Peste 1000</option>
+        </select>
+      </div>
+      <div class="full">
+        <label for="sc-observatii">Alte observații / întrebări la care îți putem răspunde la viitoarea noastră întâlnire</label>
+        <textarea id="sc-observatii" name="observatii" placeholder="De exemplu: ce module te interesează cel mai mult, ce program ai deja în școală, ce rezultat aștepți..."></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="TeachFi · Aplicație școală">
+      <input type="hidden" name="form_type" value="school_ro">
+      <div class="full">
+        <button class="btn btn-primary btn-lg" type="submit">Trimite aplicația</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap" style="max-width:720px;">
+    <span class="kicker">Ce primești în pilot</span>
+    <h2 class="section-title">Beneficiile programului pilot</h2>
+    <ul class="bullet">
+      <li>Platforma TeachFi <strong>gratuită</strong> pe toată durata pilotului.</li>
+      <li>Token propriu, complet personalizat (nume, simbol, reguli).</li>
+      <li>Onboarding cu echipa noastră (5 zile de training pentru profesori).</li>
+      <li>Curriculum complet pe 5 ani, gata pregătit, validat la SRBan.</li>
+      <li>Suport tehnic prioritar.</li>
+      <li>Vizibilitate publică în comunicarea TeachFi.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap cta-wrap">
+    <h2>Vrei să discutăm înainte de aplicație?</h2>
+    <p>Te sunăm noi, în orice moment al săptămânii.</p>
+    <div class="hero-cta center">
+      <a class="btn btn-primary btn-lg" href="mailto:contact@teachfi.education">contact@teachfi.education</a>
+      <a class="btn btn-ghost btn-lg" href="tel:+40721703878">+40 721 70 38 78</a>
+    </div>
+  </div>
+</section>

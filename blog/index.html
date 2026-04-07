@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: /blog/
+title: "Blog — TeachFi"
+lang: ro
+description: "Noutăți, anunțuri și povești din ecosistemul TeachFi și pilotul SRBan."
+---
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> Blog</div>
+    <h1 class="hero-title">Noutăți din <span class="grad">TeachFi</span></h1>
+    <p class="hero-sub">Anunțuri, lecții din pilotul SRBan, povești ale elevilor care au trecut prin programul de 5 ani.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="posts">
+      {% for post in site.posts %}
+        <a class="post-card" href="{{ post.url | relative_url }}">
+          <div class="post-date">{{ post.date | date: "%d %B %Y" }}</div>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+          <span class="post-more">Citește mai mult →</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

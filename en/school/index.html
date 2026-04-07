@@ -1,0 +1,98 @@
+---
+layout: default
+permalink: /en/school/
+lang: en
+title: "I want TeachFi at my school"
+description: "Apply to bring TeachFi to your school. Free account, 5-minute setup, no card required."
+---
+
+<section class="hero">
+  <div class="wrap" style="max-width:880px;">
+    <div class="eyebrow">
+      <a href="/en/" style="color:var(--brand);">← Back to home</a>
+    </div>
+    <h1 class="hero-title" style="margin-top:24px;">
+      I want TeachFi <span class="grad">at my school.</span>
+    </h1>
+    <p class="hero-sub">
+      Start the TeachFi pilot at your institution — free for the entire program. 5-minute technical setup, onboarding with our team, full 5-year curriculum.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap" style="max-width:720px;">
+    <span class="kicker">School application</span>
+    <h2 class="section-title">Tell us about your school</h2>
+    <p class="lead">Fill in the form and we'll get back to you within 3 business days with an intro call.</p>
+
+    <form class="lead-form" action="https://formspree.io/f/{{ site.formspree.school }}" method="POST" style="margin-top:32px;">
+      <div class="full">
+        <label for="sc-name">Institution name *</label>
+        <input id="sc-name" type="text" name="institution" required>
+      </div>
+      <div>
+        <label for="sc-email">Email *</label>
+        <input id="sc-email" type="email" name="email" required>
+      </div>
+      <div>
+        <label for="sc-phone">Phone *</label>
+        <input id="sc-phone" type="tel" name="phone" required placeholder="+...">
+      </div>
+      <div class="full">
+        <label for="sc-address">Address *</label>
+        <input id="sc-address" type="text" name="address" required placeholder="Street, city, country">
+      </div>
+      <div>
+        <label for="sc-contact">Contact person *</label>
+        <input id="sc-contact" type="text" name="contact_person" required>
+      </div>
+      <div>
+        <label for="sc-users">Estimated number of users *</label>
+        <select id="sc-users" name="users" required>
+          <option value="">Pick a range</option>
+          <option>Under 100</option>
+          <option>100 – 250</option>
+          <option>250 – 500</option>
+          <option>500 – 1000</option>
+          <option>Over 1000</option>
+        </select>
+      </div>
+      <div class="full">
+        <label for="sc-notes">Other notes / questions we can address in our next meeting</label>
+        <textarea id="sc-notes" name="notes" placeholder="For example: which modules interest you most, what program you already have in place, what outcomes you expect..."></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="TeachFi · School application">
+      <input type="hidden" name="form_type" value="school_en">
+      <div class="full">
+        <button class="btn btn-primary btn-lg" type="submit">Send application</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap" style="max-width:720px;">
+    <span class="kicker">Pilot benefits</span>
+    <h2 class="section-title">What you get in the pilot</h2>
+    <ul class="bullet">
+      <li>The TeachFi platform is <strong>free</strong> for the entire pilot.</li>
+      <li>Your own fully customized token (name, symbol, rules).</li>
+      <li>Onboarding with our team (5 days of teacher training).</li>
+      <li>A complete 5-year curriculum, ready to use, validated at SRBan.</li>
+      <li>Priority technical support.</li>
+      <li>Public visibility in TeachFi's communications.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap cta-wrap">
+    <h2>Want to chat before applying?</h2>
+    <p>We'll call you back any day of the week.</p>
+    <div class="hero-cta center">
+      <a class="btn btn-primary btn-lg" href="mailto:contact@teachfi.education">contact@teachfi.education</a>
+      <a class="btn btn-ghost btn-lg" href="tel:+40721703878">+40 721 70 38 78</a>
+    </div>
+  </div>
+</section>

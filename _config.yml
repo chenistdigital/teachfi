@@ -1,0 +1,47 @@
+title: TeachFi
+tagline: Teen Crypto Hub for Financial Innovation
+description: >-
+  TeachFi is a Solana-powered DeFi learning platform for schools.
+  Each school issues its own SPL token. Students earn it, save it, trade it
+  on the DEX, and vote on how the class budget is spent — all on-chain.
+url: "https://teachfi.education"
+baseurl: ""
+author: TeachFi
+location: Craiova, Romania
+
+# Contact + lead form endpoints
+contact:
+  email: contact@teachfi.education
+  phone: "+40 721 70 38 78"
+  phone_tel: "+40721703878"
+
+# Formspree form IDs — replace with your real IDs from formspree.io
+# You can use one shared form (set all three to the same ID) or three separate forms
+formspree:
+  school: "mlgozzej" # /scoala/ and /en/school/ https://formspree.io/f/mlgozzej
+  investor: "mlgozzej" # /investitor/ and /en/investor/
+  general: "mlgozzej" # homepage contact form
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Blog
+permalink: /blog/:year/:month/:slug/
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      lang: ro
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

@@ -1,0 +1,94 @@
+---
+layout: default
+---
+{% assign is_en = false %}
+{% if page.lang == 'en' %}{% assign is_en = true %}{% endif %}
+{% assign home_url = '/' %}{% if is_en %}{% assign home_url = '/en/' %}{% endif %}
+{% assign modules_anchor = home_url | append: '#module' %}
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">
+      <a href="{{ modules_anchor }}" style="color: var(--brand);">{% if is_en %}← Back to all modules{% else %}← Înapoi la toate modulele{% endif %}</a>
+    </div>
+    <div style="display:flex; align-items:center; gap:24px; margin-top:20px;">
+      <div class="ico" style="width:80px; height:80px; font-size:36px; border-radius:18px;">{{ page.icon }}</div>
+      <div>
+        <h1 class="hero-title" style="font-size:clamp(32px,4.5vw,56px); margin:0 0 10px;">{{ page.title }}</h1>
+        <p class="hero-sub" style="margin:0; max-width:720px;">{{ page.summary }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if page.image %}
+<section class="section" style="padding-top:48px;">
+  <div class="wrap">
+    <div class="module-screenshot">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }} screenshot">
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section" style="padding-top:48px;">
+  <div class="wrap" style="max-width:880px;">
+    <span class="kicker">{% if is_en %}Overview{% else %}Privire de ansamblu{% endif %}</span>
+    <h2 class="section-title">{% if is_en %}What this module does{% else %}Ce face acest modul{% endif %}</h2>
+    <div style="font-size:17px; line-height:1.75; color:var(--muted);">
+      {{ content }}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <span class="kicker">{% if is_en %}Features{% else %}Funcționalități{% endif %}</span>
+    <h2 class="section-title">{% if is_en %}Inside the module{% else %}În interiorul modulului{% endif %}</h2>
+    <div class="grid grid-3">
+      {% for f in page.features %}
+        <article class="card">
+          <div class="ico">{{ f.icon | default: '◆' }}</div>
+          <h3>{{ f.title }}</h3>
+          <p>{{ f.text }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if page.for_who %}
+<section class="section">
+  <div class="wrap">
+    <span class="kicker">{% if is_en %}Who it's for{% else %}Pentru cine{% endif %}</span>
+    <h2 class="section-title">{% if is_en %}Built for these users{% else %}Construit pentru acești utilizatori{% endif %}</h2>
+    <ul class="advantages">
+      {% for w in page.for_who %}
+        <li><span>★</span>{{ w }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section-alt">
+  <div class="wrap">
+    <span class="kicker">{% if is_en %}Other modules{% else %}Alte module{% endif %}</span>
+    <h2 class="section-title">{% if is_en %}Explore the rest of the ecosystem{% else %}Explorează restul ecosistemului{% endif %}</h2>
+    <p class="lead">
+      {% if is_en %}TeachFi has 13 interconnected modules. Each one is a real economic skill in disguise.{% else %}TeachFi are 13 module interconectate. Fiecare e o lecție economică reală deghizată.{% endif %}
+    </p>
+    <a class="btn btn-primary btn-lg" href="{{ modules_anchor }}">{% if is_en %}See all modules{% else %}Vezi toate modulele{% endif %}</a>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap cta-wrap">
+    <h2>{% if is_en %}Want this module at your school?{% else %}Vrei acest modul în școala ta?{% endif %}</h2>
+    <p>{% if is_en %}Free account, 5-minute setup, no card required.{% else %}Cont gratuit, configurare în 5 minute, fără card.{% endif %}</p>
+    <div class="hero-cta center">
+      <a class="btn btn-primary btn-lg" href="https://app.teachfi.education" target="_blank" rel="noopener">{% if is_en %}Create school account{% else %}Creează cont școală{% endif %}</a>
+      <a class="btn btn-ghost btn-lg" href="mailto:contact@teachfi.education">{% if is_en %}Talk to the team{% else %}Vorbește cu echipa{% endif %}</a>
+    </div>
+  </div>
+</section>
