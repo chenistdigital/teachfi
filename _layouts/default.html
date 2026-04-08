@@ -116,8 +116,8 @@
           <a class="{% unless is_en %}active{% endunless %}" href="{{ '/' | relative_url }}">RO</a>
           <a class="{% if is_en %}active{% endif %}" href="{{ '/en/' | relative_url }}">EN</a>
         </div>
-        <a class="btn btn-primary" href="https://app.teachfi.education" target="_blank" rel="noopener">
-          {% if is_en %}Try the pilot{% else %}Vezi pilotul{% endif %}
+        <a class="btn btn-primary" href="{% if is_en %}/en/demo/{% else %}/demo/{% endif %}">
+          {% if is_en %}Book a demo{% else %}Vezi pilotul{% endif %}
         </a>
         <button type="button" class="nav-toggle" id="navToggle" aria-label="{% if is_en %}Open menu{% else %}Deschide meniul{% endif %}" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -179,7 +179,7 @@
           <li><a href="{{ home_url | relative_url }}#module">{% if is_en %}Modules{% else %}Module{% endif %}</a></li>
           <li><a href="{{ home_url | relative_url }}#curriculum">Curriculum</a></li>
           <li><a href="{{ home_url | relative_url }}#roadmap">Roadmap</a></li>
-          <li><a href="https://app.teachfi.education" target="_blank" rel="noopener">SRBan</a></li>
+          <li><a href="{% if is_en %}/en/demo/{% else %}/demo/{% endif %}">Demo</a></li>
         </ul>
       </div>
       <div class="foot-col">

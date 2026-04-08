@@ -1,0 +1,89 @@
+---
+layout: default
+permalink: /demo/
+lang: ro
+title: "Vezi TeachFi în acțiune — Rezervă un demo"
+description: "Abonează-te și primești un email când deschidem următoarea sesiune de demo TeachFi. Vedem împreună platforma live, cu Q&A."
+---
+
+<section class="hero">
+  <div class="wrap" style="max-width:880px;">
+    <div class="eyebrow">
+      <a href="/" style="color:var(--brand);">← Înapoi la pagina principală</a>
+    </div>
+    <h1 class="hero-title" style="margin-top:24px;">
+      Vrei să vezi <span class="grad">TeachFi în acțiune?</span>
+    </h1>
+    <p class="hero-sub">
+      Organizăm periodic sesiuni demo live în care parcurgem platforma împreună — de la crearea tokenului școlii, până la Bancă, Marketplace și NFT-uri. Lăsă-ne emailul tău și te anunțăm când deschidem următoarea sesiune.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap" style="max-width:640px;">
+    <span class="kicker">Abonare demo</span>
+    <h2 class="section-title">Primește invitația pe email</h2>
+    <p class="lead">Fără spam. Un singur email când e programată următoarea sesiune de demo, plus detaliile de conectare.</p>
+
+    <form class="lead-form" action="https://formspree.io/f/{{ site.formspree.general }}" method="POST" style="margin-top:32px;">
+      <div class="full">
+        <label for="demo-nume">Nume *</label>
+        <input id="demo-nume" type="text" name="nume" required>
+      </div>
+      <div class="full">
+        <label for="demo-email">Email *</label>
+        <input id="demo-email" type="email" name="email" required>
+      </div>
+      <div class="full">
+        <label for="demo-rol">Rol</label>
+        <select id="demo-rol" name="rol">
+          <option>Director / Administrator</option>
+          <option>Profesor</option>
+          <option>Părinte</option>
+          <option>Elev</option>
+          <option>Investitor / Sponsor</option>
+          <option>Altul</option>
+        </select>
+      </div>
+      <div class="full">
+        <label for="demo-org">Școala / Organizația</label>
+        <input id="demo-org" type="text" name="organizatie">
+      </div>
+      <div class="full">
+        <label for="demo-obs">Vreo întrebare pe care vrei să o acoperim în demo?</label>
+        <textarea id="demo-obs" name="observatii" placeholder="Opțional — ne ajută să pregătim sesiunea pentru tine..."></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="TeachFi · Cerere demo">
+      <input type="hidden" name="form_type" value="demo_ro">
+      <div class="full">
+        <button class="btn btn-primary btn-lg" type="submit">Vreau să particip la demo</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap" style="max-width:720px;">
+    <span class="kicker">Ce vei vedea</span>
+    <h2 class="section-title">Structura unei sesiuni demo</h2>
+    <ul class="bullet">
+      <li><strong>Prezentare generală</strong> — conceptul TeachFi, validarea prin SRBan, ecosistemul de 13 module.</li>
+      <li><strong>Tur live al platformei</strong> — creăm un token fictiv pentru „Școala Demo", alocăm burse, facem tranzacții în Bancă și Marketplace.</li>
+      <li><strong>Q&A deschis</strong> — răspundem la orice întrebare despre implementare, costuri, GDPR, siguranță, integrare cu programa.</li>
+      <li><strong>Pașii următori</strong> — dacă vrei să devii școală pilot, discutăm concret cum se întâmplă.</li>
+    </ul>
+    <p class="muted" style="margin-top:18px;">Durată estimativă: 45–60 minute. Zoom sau Google Meet.</p>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap cta-wrap">
+    <h2>Vrei să discutăm mai devreme?</h2>
+    <p>Poți să ne scrii direct — răspundem rapid.</p>
+    <div class="hero-cta center">
+      <a class="btn btn-primary btn-lg" href="mailto:contact@teachfi.education">contact@teachfi.education</a>
+      <a class="btn btn-ghost btn-lg" href="tel:+40721703878">+40 721 70 38 78</a>
+    </div>
+  </div>
+</section>
